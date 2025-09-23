@@ -1,0 +1,8 @@
+node_modules/
+.secrets/
+raw/
+**/*.key
+**/*.pem
+**/*.pfx
+**/*.kdbx
+.env
