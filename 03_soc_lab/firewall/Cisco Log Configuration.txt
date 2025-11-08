@@ -1,0 +1,16 @@
+Cisco ASA 5506X Syslog script
+
+
+conf t
+logging enable
+logging timestamp
+logging device-id hostname
+logging trap informational
+logging host inside 192.168.1.5 udp/514
+end
+write mem
+
+
+
+show logging
+
