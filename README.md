@@ -1,2 +1,2 @@
 # Capstone
-Captstone Blue Team Intel Project
+Captstone Blue Team Intelligence Capstone
