@@ -1,0 +1,12 @@
+; J9775A Configuration Editor; Created on release #YA.16.02.0012
+; Ver #0e:01.10.82.34.47.18.28.f3.84.9c.63.ff.37.27:b9
+hostname "vortex_switch"
+time timezone -5
+ip default-gateway 192.168.1.1
+snmp-server community "lab01" unrestricted
+vlan 1
+   name "DEFAULT_VLAN"
+   untagged 1-52
+   ip address 192.168.1.2 255.255.255.0
+   exit
+password manager

@@ -1,0 +1,13 @@
+Script for Aruba SPAN Config
+
+Destination Port: 24
+Source Port: 1
+
+config
+mirror-port 24
+interface 1
+monitor
+exit
+exit
+show monitor
+write memory
