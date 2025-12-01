@@ -5,7 +5,7 @@
 This directory serves as the log of the Capstone project. Each summary tracks progress, documents decisions and challenges faced.
 
 
-## 📄 Standard Summary Template
+## Standard Summary Template
 
 Each weekly file must adhere to the following structure:
 
