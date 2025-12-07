@@ -1,34 +1,61 @@
-# Project Charter: Blue Team Intelligence
+# Project Charter: Blue Team Intelligence Capstone
 
-## Project Goal
+This directory contains the evolving project charters for the Blute Team Intelligence Capstone. Each version represents deliberate changes made throughout the semester match the goals within the contraints and limitations as they arose. 
+The final charter, v1.0, is the authoritative scope for this project. Earlier versions are kept to demonstrate the history and evolution of the project. 
 
-To design, implement, and document a functional **Blue Team Intelligence** focused on the collection and analysis of Open-Source Intelligence (OSINT) to generate a detection rule.
+## Charter Versions Overview
 
-## Scope
+### Charter v0.01 - Full Pipeline 
 
-### In Scope
-* **Target Environment:** Simulated internal network (VM-based lab).
-* **Intelligence Focus:** Malvertising campaigns.
-* **Deliverables:** Charter, Weekly Summaries, SOC Lab Build-out, OSINT Report, one Detection Rule, and Final Capstone Report.
-* **Tools:** Security Onion, Cisco ASA, Aruba Switch, Desktops, Virtual Machines.
+### Focus:
 
-### Out of Scope
-* Physical network security assessments.
-* Penetration testing or ethical hacking (outside of validating detection rules).
-* Policy creation unrelated to the intelligence and detection pipeline.
+End-to-end blue team workflow from OSINT collection through detection implementation, testing, and timed incident response drills.
 
-## Success Criteria
+### Key Characteristics:
 
-The project will be deemed successful if the team achieves the following:
-1.  Successfully **ingest and normalize** logs from log sources.
-2.  Produce a comprehensive **OSINT Report** identifying at least 3 unique TTPs and 5 unique IOCs.
-3.  Implement and **validate** one custom detection rule in Security Onion.
+* Three detection rules built from OSINT.
+* Multiple controlled simulations.
+* Full SOC lab validation with Security Onion.
+* Incident response playbook and timed drills.
+* MITRE ATT&CK mapping included.
 
-## Team Roles & Responsibilities
+### Reason for Revision:
 
-| Role | Team Member | Primary Responsibility |
-| :--- | :--- | :--- |
-| **Project Lead** | Kyle Hathaway | Final report, overall integration, presentation. |
-| **Lab Architect** | Kyle Hathaway | SOC Lab infrastructure build, log pipeline, Security Onion configuration. |
-| **Intelligence Analyst** | Kyle Hathaway | OSINT collection, analysis, and report generation (`04_osint_case`). |
-| **Detection Engineer** | Kyle Hathaway | Rule creation, validation, and documentation (`05_detections`). |
+This version represented the project's initial vision. As the project began to take shape it became clear that the full pipeline could not be implemented reliably within the constraints of this semester.
+
+## Charter v0.02 - Reduced and Stabilized
+
+### Focus:
+
+Tightened intelligence to detection workflow with limited validation.
+
+### Key Changes:
+
+* Detection count reduced from three to one.
+* Simulations reduced to a single controlled scenario.
+* SOC lab validation role minimized.
+* Deliverables narrowed to core intelligence and detection reports and evidence.
+
+### Reason for Revision:
+
+Lab instability and time constraints limited the reliability of testing. This revision reduced the risk while maintainng the hands on implementation portion.
+
+## Charter v1.0 - Final
+
+### Focus:
+
+Intelligence driven detection design and documentation.
+
+### Key Changes:
+
+* Removal of live detection testing.
+* Removal of MITRE ATT&CK mapping due to lack of confidence in the data.
+* Focus on IOC analysis, detection logic, and documentation.
+
+### Reasons for Revision:
+
+As the lab environment became unreliable, the project had to change focus to detetion design. This version preserves the value of the project while avoiding unsupported and inaccurate claims.
+
+## Why Earlier Versions Are Kept
+
+Keeping earlier charters provides tranparency into project planning decisions, evidence of scope managment, documentation of risk evaluation, and a clear narrative for readers.
