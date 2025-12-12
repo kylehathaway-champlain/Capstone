@@ -1,2 +1,9 @@
-# Capstone
-Captstone Blue Team Intelligence Capstone
+# Executive Summary
+
+This capstone project investigates how malicious adertising is used to serve tronjanized software through impersonation domains an download sites. The goal of the project was to use opensource inelligence about real world malware campaign into detection rules for a small SOC environment.
+
+The project began with the construction of a realistic SOC lab, utilizing a Cisco ASA firewall, an Aruba 2530 switch, Windows 10 hosts, virtual machines and a security Onion deployment for endpoint and network logs. The lab successfully ingested Elastic Agent data, firewall logs, and network traffic. However, mid-semester hardware failures and configuration drift introduced instability that prevented reliable validation of detection rules. As a result, the project shifted to detection design rather than full exection.
+
+The OSINT investigation was stronger and most complete component of the project. Using tools like VirusTotal, uslscan.io and Triage the investigation identified and verified malicious infrastructure distributing fake PuTTY installers. This included a high risk impersonation domain, puttyssh.run, and an associated IP address, 104.21.16.48. From this intelligence, tow detection rules were designed using Suricata syntax. These two rules were DNS Query Detection for requests to puttyssh.run and Outboud Traffic Detection for communication with the malicious IP address. These rules represent the endpoint of the project, where OSINT obsevations were turned in to practical detection rules. Although these detections were not executed in the fianl lab environment due to system  instability, the design is grounded in real world OSINT findings.
+
+Overall, the project demonstrtates a complete intelligence to detection workflow and reflects the kinds of constraints faced by real SOC teams. It shows the importance of accurate documentation and adaptability when technical limitations arise. 
